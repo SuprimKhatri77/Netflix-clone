@@ -12,18 +12,22 @@ body{
 }
 .main{
     background-image: url(images/bg.jpg);
-    background-size:max(1200px,100vw);
+    background-size:cover;
     background-position: center center;
     background-repeat: no-repeat;
     height:70vh;
     position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
 }
 
 .main .box{
     height:70vh;
     width:100%;
     background-color: black;
-    opacity:0.44;
+    opacity:0.69;
     position:absolute;
     top:0;
 }
@@ -35,6 +39,7 @@ nav{
     max-width: 80vw;
     margin: auto;
     padding: 18px;
+    height:90px;
 }
 
 nav img{
@@ -49,7 +54,7 @@ nav img{
 }
 
 .hero{
-    height:100%;
+    height:calc(100% - 62px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,11 +63,12 @@ nav img{
     position: relative;
     font-family: 'Poppins',sans-serif;
     gap:10px;
-    padding:30px;
+    padding: 0 30px;
     text-align:center;
 }
 
 .hero> :nth-child(1){
+    font-family: 'Poppins',sans-serif;
     font-weight: 900;
     font-size: 47px;
     max-width: 78vw;
@@ -76,3 +82,52 @@ nav img{
     font-weight:400;
     font-size: 20px;
 }
+
+.separation{
+    height:7px;
+    background-color: rgb(40, 38, 38);
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    gap:4px;
+}
+.btn{
+    padding:3px 8px;
+    font-weight: bold;
+}
+
+.btn-red{
+    background-color:rgb(229, 9, 20);
+    color:white;
+    padding:9px 16px;
+    border-radius:4px;
+    font-size:20px;
+    border:none;
+}
+.main input{
+    padding:14px 175px 14px 14px;
+    font-size: 15px;
+    background-color: rgba(23,23,23,0.2);
+    position: relative;
+    border-radius: 4px;
+    border:0.5px solid grey;
+    color:white;    
+    /* text-align: left; */
+    /* opacity: 0; */
+    /* border:0 solid transparent; */
+}
+
+.main input::placeholder{
+    /* position: absolute;
+    left:15px; */
+    color:white;
+}
+.btn-red-sm{
+    background-color:rgb(229, 9, 20);
+    color:white;
+    
+}
+
