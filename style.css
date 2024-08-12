@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(images/bg.jpg);
+    background-size:max(1200px,100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height:70vh;
+    position: relative;
+}
+
+.main .box{
+    height:70vh;
+    width:100%;
+    background-color: black;
+    opacity:0.44;
+    position:absolute;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 18px;
+}
+
+nav img{
+    /* width:144px; */
+    position: relative;
+    z-index: 10;
+}
+
+ nav .flex button {
+    position: relative;
+    z-index:10;
+}
+
+.hero{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    gap:10px;
+    padding:30px;
+    text-align:center;
+}
+
+.hero> :nth-child(1){
+    font-weight: 900;
+    font-size: 47px;
+    max-width: 78vw;
+}
+
+.hero>:nth-child(2){
+    font-weight:400;
+    font-size: 24px;
+}
+.hero> :nth-child(23){
+    font-weight:400;
+    font-size: 20px;
+}
