@@ -122,7 +122,7 @@ nav .flex button {
     font-weight: 600;
 }
 
-.main input {
+.main input, .FAQ-input {
     padding: 14px 175px 14px 14px;
     font-size: 15px;
     background-color: rgba(23, 23, 23, 0.2);
@@ -257,3 +257,96 @@ nav .flex button {
     position:absolute;
     right: 10px;
 }
+/* below FAQ section */
+.ready-to-watch-netflix{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:40px 0 20px 0;
+    font-size: 20px;
+    max-width:60vw;
+    margin: auto;
+}
+
+/* footer */
+/* footer :first-child{
+    display: block;
+} */
+footer{
+    padding:50px 0 50px 10vw;
+    }
+    .footer-first-link{
+        display: block;
+        padding-bottom: 20px;
+        color:rgb(191, 187, 187);
+        font-size:15px;
+    }
+    .footer-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* background-color:white; */
+    padding:0 0 20px 0;
+    }
+
+    .footer-container a{
+        color:rgba(104, 101, 101, 0.711);
+        font-size: 14px;
+    }
+
+    .footer-container a:visited{
+        color:white;
+    }
+
+    /* .below-footer-button{
+      
+        position: relative;
+        padding:5px 20px 5px 20px;
+        font-weight: 500;
+        font-size:16px;
+        color:white;
+        background: transparent;
+        border-radius: 4px;
+        border:1px solid white;
+        appearance: none;
+    }
+    .below-footer-button::after {
+        content: '▼';
+        position: absolute;
+        right: 10px; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        pointer-events: none; 
+        color: white; 
+      } */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    
+      .dropdown select {
+        appearance: none;
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+        background: none; 
+        border: 1px solid #ccc; 
+        border-radius: 4px;
+        padding: 5px 30px; 
+        margin-right: 10px;
+        font-size: 16px; 
+        color: white;
+        background-color: #000;
+      }
+    
+      /* Custom dropdown icon */
+      .dropdown::after {
+        content: '▼'; 
+        font-size: 12px;
+        position: absolute;
+        right: 20px; 
+        top: 50%; 
+        transform: translateY(-50%);  
+        pointer-events: none; 
+        color: white;
+      }
